@@ -45,6 +45,7 @@ void deleteNode(Node* p, int key)
         {
             first = first->next;
             delete p;
+            break;
         }
         else
         {
@@ -54,9 +55,9 @@ void deleteNode(Node* p, int key)
             {
                 q->next = p->next;
                 delete p;
+                break;
             }
         }
-        break;
     }
 }
 
